@@ -15,11 +15,13 @@ module Ruler
     def is(attribute)
       @evaluator = Evaluators::Is.new
       @evaluator.attribute = attribute
+      self
     end
 
     def is_not(attribute)
       @evaluator = Evaluators::IsNot.new
       @evaluator.attribute = attribute
+      self
     end
   end
 end
