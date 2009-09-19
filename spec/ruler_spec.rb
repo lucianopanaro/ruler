@@ -60,14 +60,14 @@ describe "Ruler" do
     end
 
     describe "setting an evaluator with access methods" do
-      it "sets an Is evaluator when calling #is" do
+      it "sets an Is evaluator with attr when calling #is(attr)" do
         rule = Ruler::Rule.new
         rule.is(:valid?)
         rule.evaluator.should be_instance_of(Ruler::Evaluators::Is)
         rule.evaluator.attribute.should == :valid?
       end
 
-      it "sets an Is Not evaluator when calling #is_not" do
+      it "sets an Is Not evaluator with attr when calling #is_not(attr)" do
         rule = Ruler::Rule.new
         rule.is_not(:valid?)
         rule.evaluator.should be_instance_of(Ruler::Evaluators::IsNot)
