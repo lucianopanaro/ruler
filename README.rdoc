@@ -1,6 +1,6 @@
 = ruler
 
-Description goes here.
+Rules engine for Ruby. *Experimental*, this is not even in alpha state.
 
 == Note on Patches/Pull Requests
  
